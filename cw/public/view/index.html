@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--미리보기-->
+  <meta property="og:description" content="비행기 지연을 보상받는 가장 빠른 방법">
+  <meta property="og:title" content="CryptoWarranty">
+  <meta property="og:image" content="/public/img/thumbnail.png">
+   
+  <!--Web3.js code-->
+  <script>
+    function flight() {
+      $.ajax({
+        type: "get",
+        url: `/flight?flightDate=${document.getElementById("flightDate").value}&flightNumber=${document.getElementById("flightNumber").value}`,
+        error: () => {
+          alert('에러 발생!');
+        },
+        success: (data) => {
+          const flight = JSON.parse(data);
+          
+          if (!flight.response.body.items.item) {
+            alert('잘못된 항공번호 또는 날짜입니다.\n다시 확인해주세요!');
+            return;
+          }
+
+          localStorage.setItem('flightstart', flight.response.body.items.item.airport);
+          localStorage.setItem('flightarrival', flight.response.body.items.item.city);
+          location.href = "/public/view/verify.html";
+        }
+
+      });
+    }
+  </script>  
+  <!--jquery action code-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#insurance").click(function () {
+        $("#show").slideToggle(1000);
+      });
+
+      $("#show").hide();
+
+    });
+  </script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <script type="text/javascript"> 
+
+    jQuery(function ($) {
+      $('#scrolltotop').hide();
+      $(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 350) {
+            $('#scrolltotop').fadeIn();
+          } else {
+            $('#scrolltotop').fadeOut();
+          }
+        });
+        $('#scrolltotop a').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 600);
+          return false;
+        });
+
+        $('#a a').click(function () {
+          $('body,html').animate({
+            scrollTop: 865
+          }, 950);
+          return false;
+        });
+
+        $('#b a').click(function () {
+          $('body,html').animate({
+            scrollTop: 1840
+          }, 950);
+          return false;
+        });
+
+        $('#c a').click(function () {
+          $('body,html').animate({
+            scrollTop: 3680
+          }, 950);
+          return false;
+        });
+
+        $('#d a').click(function () {
+          $('body,html').animate({
+            scrollTop: 5438
+          }, 950);
+          return false;
+        });
+      });
+    });
+//-->
+  </script>
+
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="/public/img/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CryptoWarranty</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/public/css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    
+<!--여기 크립토워렌티 주소 부분 인덱스주소로 바꿔주세요-->  
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="/public/view/index.html"><img src="/public/img/pop32.png">&nbsp;&nbsp;Crypto
+        warranty</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">INSURANCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/public/view/contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Q&A</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--form 추가할 부분-->
+  <header class="masthead text-white d-flex">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container my-auto">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+
+
+              </div>
+
+            </div>
+          </div>
+          <!--여기를 건드려야됌!-->
+
+          <div class="container my-auto">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <h3 class="text-uppercase text-center " style="font-size:30pt"><br><br><br>
+
+                  <strong>비행기 지연 보상을 받는</strong><br>
+                  <strong>가장 빠른 방법</strong><br>
+                </h3>
+
+              </div>
+
+            </div>
+          </div>
+          <!--양식--><br>
+          <form id="contactForm show" name="sentMessage" novalidate="novalidate" action="/public/view/verify.html">
+            <div class="row">
+              <div style="margin: 0 auto" class="col-md-6">
+             
+                <!--항공번호-->
+                <div class="form-group">
+                  <label id="font" for="Flightnumber">Flight Number</label>
+                  <input class="form-control input-group-sm" id="flightNumber" type="text" placeholder="항공 번호" required="required" data-validation-required-message="Please enter your FlightNumber.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <!--출발날짜-->
+                <div class="form-group">
+                  <label id="font" for="Departure Date">Departure Date</label>
+                  <input class="form-control input-group-sm" id="flightDate" type="date" placeholder="" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger text-black"></p>
+                </div>
+                <p id="font" class="text-center text-black">
+                
+                  출발 15일 전까지 신청할 수 있습니다.
+             
+                </p>
+
+              </div>
+
+
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn  btn-light btn-xl sr-button text-uppercase" type="button" onclick="flight()">검색</button>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!--블록체인 기술을 활용한 비행기 연착 보험-->
+  <section class="bg-primary" id="about">
+
+    <div class="container">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 id="insurance" class="section-heading text-black">ABOUT</h2>
+        <hr class="light my-4">
+
+
+
+        <div class="row">
+          <!--첫번째 사진-->
+          <div class=" col-md-6">
+            <div class="service-box mt-5 mx-auto">
+              <div class="aboutimg"><img src="/public/img/block.png"></div>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-6">
+            <div class="service-box mt-5 mx-auto">
+              <div class="aboutext">
+                <h3 id="insurance" class="section-heading text-white">블록체인 기술을 활용한 비행기 연착 보험</h3>
+                <p><br>CryptoWarranty는 암호화된 분산 장부 기술과 스마트 컨트랙트를 이용해<br>여행자의 비행기 지연 문제를 위한 단기 보험서비스를 제공합니다.</p>
+                <p>피보험자의 별도 서류 제출 없이도 합의된 알고리즘을 통해 지연 데이터 확인 후<br>스마트 계약에 명시된 내용에 따라 자동으로 보상을 지급합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+        </div>
+      </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">YOUR BENEFIT</h2>
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <img src="/public/img/document.png">
+            <h3 class="mb-3">서류준비 불필요</h3>
+            <p class="text-muted mb-0">서류작업이 필요 없기에<br>준비할 필요가 없습니다.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <img src="/public/img/okay.png">
+            <h3 class="mb-3">예외 없음</h3>
+            <p class="text-muted mb-0">지연의 원인과 상관없이<br>보상금 전액을 지급합니다.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <img src="/public/img/star.png">
+            <h3 class="mb-3">즉각 보상</h3>
+            <p class="text-muted mb-0">지연데이터 확인 즉시<br>보상으로 이어집니다.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <img src="/public/img/trav.png">
+            <h3 class="mb-3">더 많은 보상</h3>
+            <p class="text-muted mb-0">최대 100만원까지<br>보상으로 이어집니다.</p>
+          </div>
+  </section>
+
+  <!--HOW IT WORKS-->
+
+  <section class="bg-dark text-white">
+
+    <div class="container text-center">
+      <h2 class="btn-light btn-xl sr-button how">HOW IT WORKS</h2>
+      <div class="works"><img src="/public/img/works.png"></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!--Let's get in touch-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <hr class="my-4">
+          <p class="mb-5">CONTACT 페이지를 통해 언제나 문의가능합니다 ! </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+          <p>010-7707-1884</p>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+          <p>
+            <a href="mailto:your-email@your-domain.com">CryptoWarranty@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark" style=" height:250px ; background-image: url(/public/img/footer.png)">
+
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/public/js/creative.min.js"></script>
+  <div class="back"></div>
+  <div id="scrolltotop"><a href="#top"><span><img src="/public/img/%ED%83%91.png"></span></a></div>
+</body>
+
+</html>

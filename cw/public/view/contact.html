@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--jquery action code-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#img_yoon")
+        .mouseover(function () {
+          $(this).attr('src', 'img/yoon_over.png');
+        })
+        .mouseout(function () {
+          $(this).attr('src', 'img/yoon.png');
+        });
+
+      $("#img_gill")
+        .mouseover(function () {
+          $(this).attr('src', 'img/gill_over.png');
+        })
+        .mouseout(function () {
+          $(this).attr('src', 'img/gill.png');
+        });
+
+      $("#img_dong")
+         .mouseover( function() { 
+           $(this).attr( 'src', 'img/dong_over.png' );
+         } )
+         .mouseout( function() {
+           $(this).attr( 'src', 'img/dong.png' );
+         } );
+
+      $("#img_hye")
+         .mouseover( function() { 
+           $(this).attr( 'src', 'img/hye_over.png' );
+         } )
+         .mouseout( function() {
+           $(this).attr( 'src', 'img/hye.png' );
+         } );
+    });
+  </script>
+  <title>CryptoWarranty</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="/public/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/public/css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!--여기 크립토워렌티 주소 부분 인덱스주소로 바꿔주세요-->  
+    
+    
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" href="/public/view/index.html"><img src="/public/img/pop32.png">&nbsp;&nbsp;
+        Crypto
+        warranty
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">INSURANCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Q&A</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 id="insurance" class="section-heading text-white">Contact Us</h2>
+          <hr class="light my-4">
+          <span class="glyphicon glyphicon-ok-sign"></span>
+        </div>
+        <!--contact 양식-->
+
+
+  </section>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <h4 style="font-size:25pt" class="section-heading text-uppercase">문의 사항이 있으신가요?<br><br><br></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstname">First Name</label>
+                  <input class="form-control " id="name" type="text" placeholder="이름" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+              </div>
+              <!--추가-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastname">Last Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="성" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+              </div>
+              <div class=" form-group col-sm-12">
+                <label for="email">E-mail</label>
+                <input class="form-control" id="email" type="email" placeholder="이메일 주소" required="required" data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group col-md-12">
+                <label for="msg">Message</label>
+                <textarea class="form-control form-small" rows="8" id="message" placeholder="문의사항을 남겨주세요 !" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">문의하기</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--팀 소개-->
+  <section class="bg-dark text-white">
+    <h2 class="my-4 text-center">Team</h2><br><br>
+
+    <div class="team-container">
+      <div class="team-container-row">
+        <div class="team-container-element">
+          <img id="img_gill" class="rounded-circle" src="/public/img/gill.png"><br>
+          <h5>이길하<br>
+            <small>SW Engineer</small>
+          </h5>
+          <p>landamaizer@gmail.com</p>
+        </div>
+        <div class="team-container-element">
+          <img id="img_hye" class="rounded-circle" src="/public/img/hye.png" alt=""><br>
+          <h5>장혜수
+            <small>UI/UX Designer</small>
+          </h5>
+          <p>drim07@naver.com</p>
+        </div>
+      </div>
+      <div class="team-container-row">
+        <div class="team-container-element">
+          <img id="img_yoon" class="rounded-circle" src="/public/img/yoon.png" alt=""><br>
+          <h5>최윤녕<br>
+            <small>SW Engineer</small>
+          </h5>
+          <p>choiyn1994@naver.com</p>
+        </div>
+        <div class="team-container-element">
+          <img id="img_dong" class="rounded-circle" src="/public/img/dong.png" alt=""><br>
+          <h5>이동욱<br>
+            <small>SW Engineer</small>
+          </h5>
+          <p>luckydong@naver.com</p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark" style=" height:250px ; background-image: url(public/img/footer.png)">
+
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/public/js/creative.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Overpass|Roboto|Ubuntu');
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); .notosanskr * { font-family: 'Noto Sans KR', sans-serif; }
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css); .jejugothic * { font-family: 'Jeju Gothic', sans-serif; }
+
+@font-face { font-family: 'GoyangDeogyang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangDeogyang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body,html{width:100%;height:100%}
+
+body{
+font-family     : 'Roboto',       sans-serif;
+font-family     : 'Nanum Gothic', sans-serif;
+font-family     : 'Overpass',     sans-serif;
+font-family     : 'Ubuntu',       sans-serif;
+font-family     : 'Noto Sans KR', sans-serif;
+background-color: #EDEFF4;}
+
+hr{max-width:50px;border-width:3px;border-color:#00C3FF}
+hr.light{border-color:#fff}
+
+a{color:#00C3FF;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s}
+
+a: hover{color:#00C3FF}
+
+h1{
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Overpass',     sans-serif;
+font-family: 'Ubuntu',       sans-serif;
+font-family: 'Roboto',       sans-serif;
+}
+
+h2{font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 600;}
+/*글씨체 적용*/
+h3,h4{font-family: 'GoyangDeogyang';}
+
+h5,h6{ font-family: 'Noto Sans KR', sans-serif;}
+
+
+#font {
+    font-family: 'GoyangDeogyang';
+}
+.bg-primary{background-color:#00C3FF!important}.bg-dark{background-color:#2D2F33!important}
+
+.text-faded{color:rgba(255,255,255,.7)}
+
+section{padding:8rem 0}
+
+.section-heading{margin-top:0}:: -moz-selection{color:#fff;background:#212529;text-shadow:none}:: selection{color:#fff;background:#212529;text-shadow:none}
+
+img:: selection{color:#fff;background:0 0}
+
+img:: -moz-selection{color:#fff;background:0 0}
+
+#mainNav{border-bottom:1px solid rgba(33,37,41,.1);background-color:#fff;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s}
+
+#mainNav .navbar-brand{font-weight:600;text-transform:uppercase;color:#00C3FF;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
+
+#mainNav .navbar-brand: focus, #mainNav .navbar-brand: hover{color:#00C3FF}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{font-size:.9rem;font-weight:600;text-transform:uppercase;color:#212529}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover{color:#00C3FF}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{color:#00C3FF!important;background-color:transparent}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover{background-color:transparent}
+
+
+@media (min-width:992px){#mainNav{border-color:transparent;background-color:transparent}#mainNav .navbar-brand{color:rgba(255,255,255,.7)}#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fff}#mainNav .navbar-nav>li.nav-item>a.nav-link{padding:.5rem 1rem}#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{color:rgba(255,255,255,.7)}#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover{color:#fff}#mainNav.navbar-shrink{border-bottom:1px solid rgba(33,37,41,.1);background-color:#fff}#mainNav.navbar-shrink .navbar-brand{color:#00C3FF;}#mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover{color:#00C3FF}#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus{color:#212529}#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover{color:#00C3FF}}header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 56px);background-image:url(../img/header.jpg);background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}header.masthead hr{margin-top:30px;margin-bottom:30px}header.masthead h1{font-size:2rem}header.masthead p{font-weight:300}
+
+
+@media (min-width:768px){header.masthead p{font-size:1.15rem}}
+
+
+@media (min-width:992px){header.masthead{height:100vh;min-height:650px;padding-top:0;padding-bottom:0}header.masthead h1{font-size:3rem}}@media (min-width:1200px){header.masthead h1{font-size:4rem}}.service-box{max-width:800px}
+.portfolio-box{position:relative;display:block;max-width:650px;margin:0      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img src="img/document.png">
+              <h3 class="mb-3">서류준비 불필요</h3>
+              <p class="text-muted mb-0">서류작업이 필요 없기에<br>준비할 필요가 없습니다.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img src="img/okay.png">
+              <h3 class="mb-3">예외 없음</h3>
+              <p class="text-muted mb-0">지연의 원인과 상관없이<br>보상금 전액을 지급합니다.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img src="img/star.png">
+              <h3 class="mb-3">즉각 보상</h3>
+              <p class="text-muted mb-0">지연데이터 확인 즉시<br>보상으로 이어집니다.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">즉각 보상</h3>
+              <p class="text-muted mb-0">지연데이터 확인 즉시<br>보상으로 이어집니다.</p>
+            </div> auto}.portfolio-box .portfolio-box-caption{position:absolute;bottom:0;display:block;width:100%;height:100%;text-align:center;opacity:0;color:#fff;background:rgba(10,180,245,.9);-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content{position:absolute;top:50%;width:100%;transform:translateY(-50%);text-align:center}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{padding:0 15px;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{font-size:14px;font-weight:600;text-transform:uppercase}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:18px}.portfolio-box:hover .portfolio-box-caption{opacity:1}.portfolio-box:focus{outline:0}@media (min-width:768px){.portfolio-box .portfolio-box-caption .portfrolio-box-caption-content .project-category{font-size:16px}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:22px}}.text-primary{color:#00C3FF!important}.btn{font-weight:700;text-transform:uppercase;border:none;border-radius:300px;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
+
+/*수정아래*/
+
+.btn-xl{padding:0.6rem 6rem; position: relative; top: 50px; background-color: #00C3FF; color: white; border-radius:99rem;}
+
+.btn-primary{background-color:#00C3FF;border-color:#00C3FF}.btn-primary: active, .btn-primary: focus, .btn-primary: hover{color:#fff;background-color:#00B7FF!important}.btn-primary: active, .btn-primary: focus{box-shadow:0 0 0 .2rem rgba(10,180,245,.5)!important}
+
+.input-group-sm {border-radius:1rem;}
+
+.conta {
+        position   : relative;
+        left       : 9rem;
+        padding-top: 2rem;
+}
+
+.how {
+      position    : relative;
+      margin-left : auto;
+      margin-right: auto;
+      display     : inline-block;
+
+      
+}
+
+.works { padding: 10rem;
+}
+
+/*
+    team 소개 수정
+*/
+.team-container {
+    margin-top     : 3rem;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+.team-container-row {
+    flex-grow      : 1;
+    flex-shrink    : 1;
+    flex-basis     : auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-self     : center;
+}
+
+.team-container-row1 {
+    flex-grow      : 1;
+    flex-shrink    : 1;
+    flex-basis     : auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-self     : center;
+    height         : 300px;
+}
+
+
+.team-container-element {
+    flex-grow      : 0;
+    flex-shrink    : 1;
+    flex-basis     : 0;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-self     : center;
+    margin-bottom  : 5rem;
+}
+
+.team-container-element + .team-container-element {
+    margin-left: 15rem;}
+    
+
+.team-container-element > h4, .team-container-element > p {
+    text-align: center;
+}
+
+.form-control { border-radius: 1rem;}
+
+.aboutext {text-align: left;
+           padding       : 0rem;
+           padding-top   : 0;
+           padding-bottom: 0;
+           display       : inline-block;
+           color         : white;
+           width         : 40rem;
+           font-size     : 105%;
+           position      : relative;
+           right         : 3rem;
+           }
+
+.aboutimg { 
+            display : inline-block;
+            position: relative;
+            bottom  : 1rem;
+            right   : 10rem;
+}
+
+.mb-3 {padding-top: 2rem;}
+
+.mb-0 {padding-bottom: 2.5rem;}
+
+.mb-5 {color:#6C757D}
+
+.team-container-element{text-align: center;}
+
+#contact {margin-bottom: 3rem;}
+
+#scrolltotop {
+        display : block;
+        position: fixed;
+        bottom  : 55px;
+        right   : 65px;
+    }
+    
+#scrolltotop span {
+        width  : 88px;
+        height : 88px;
+        display: block;
+        
+        margin            : 0px 15px 10px 0;
+        border-radius     : 3px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition   : all 0.2s ease-out;
+        -o-transition     : all 0.2s ease-out;
+        -ms-transition    : all 0.2s ease-out;
+        transition        : all 0.2s ease-out;
+    }
+    
+#scrolltotop a:hover span{
+        display       : block;
+        position      : fixed;
+        bottom        : 55px;
+        right         : 65px;
+        filter        : alpha(opacity=75);
+        -khtml-opacity: 0.75;
+        -moz-opacity  : 0.75;
+        opacity       : 0.75;
+        }
+
+@media (max-width:550px){
+    .aboutimg { 
+            
+}
+    
+    .money1 { 
+        margin: 5px;
+    }
+    
+    .money2 { 
+    }
